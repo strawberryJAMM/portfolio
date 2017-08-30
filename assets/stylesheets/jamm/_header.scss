@@ -1,0 +1,176 @@
+//
+// Header
+// --------------------------------------------------
+
+
+header {
+  &#main-page, &#about-page, &#contact-page, &#project-page {
+    &.header-fixed {
+      // background: #{$header-bg-image} no-repeat center top;
+      background: #{$header-bg-image} no-repeat center #{$navbar-height * 2};
+      background-attachment: fixed;
+      top: $navbar-height;
+      background-size: auto;
+      display: table;
+      height: $header-height;
+      width: 100%;
+      position: relative;
+      z-index: 1;
+      overflow-x: hidden;
+    
+      @media (min-width: $header-screen-sm-min) {
+        //background: #{$header-bg-image-sm} no-repeat center top;
+        background: #{$header-bg-image-sm} no-repeat center $navbar-height;
+        background-attachment: fixed;
+        top: 0;
+        height: $header-height-sm;
+      }
+      @media (min-width: $header-screen-md-min) {
+        @media (min-height: $header-screen-md-min) {
+          //background: #{$header-bg-image-md} no-repeat center top;
+          background: #{$header-bg-image-md} no-repeat center $navbar-height;
+          background-attachment: fixed;
+          top: 0;
+          height: $header-height-md;
+        }
+      }
+      @media (min-width: $header-screen-lg-min) {
+        @media (min-height: $header-screen-lg-min) {
+          //background: #{$header-bg-image-lg} no-repeat center top;
+          background: #{$header-bg-image-lg} no-repeat center $navbar-height;
+          background-attachment: fixed;
+          top: 0;
+          height: $header-height-lg;
+        }
+      }
+    }
+    
+    &.header-wrapper {
+      .header-overlay {
+        min-height: $header-height;
+        /*min-height: 100vh;*/
+        /*min-width: 100vw;*/
+        opacity: 0.4;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      
+      .header-wrapper-inner {
+        display: table-cell;
+        text-align: center;
+        vertical-align: middle;
+    
+        .welcome-speech {
+          margin-top: $welcome-top-margin;
+          max-width: $welcome-max-width;
+          margin-left: auto;
+          margin-right: auto;
+    
+          @media (min-width: $header-screen-sm-min) {
+            @media (min-height: $header-screen-sm-min) {
+              margin-top: $welcome-top-margin-sm;
+            }
+            max-width: $welcome-max-width-sm;
+          }
+          @media (min-width: $header-screen-md-min) {
+            @media (min-height: $header-screen-md-min) {
+              margin-top: $welcome-top-margin-md;
+              max-width: $welcome-max-width-md;
+            }
+          }
+          @media (min-width: $header-screen-lg-min) {
+            @media (min-height: $header-screen-lg-min) {
+              margin-top: $welcome-top-margin-lg;
+              max-width: $welcome-max-width-lg;
+            }
+          }
+    
+          h1 {
+            color: $brand-primary;
+            font-size: $welcome-h1-size;
+            font-weight: $font-weight-light;
+            letter-spacing: $welcome-h1-spacing;
+            margin-bottom: 12px;
+            margin-top: 0;
+            text-transform: uppercase;
+            
+            & > p {
+              margin-bottom: 60px;
+            }
+    
+            @media (min-width: $header-screen-sm-min) {
+              font-size: $welcome-h1-size-sm;
+              letter-spacing: $welcome-h1-spacing-sm;
+            }
+            @media (min-width: $header-screen-md-min) {
+              @media (min-height: $header-screen-md-min) {
+                font-size: $welcome-h1-size-md;
+                letter-spacing: $welcome-h1-spacing-md;
+              }
+            }
+            @media (min-width: $header-screen-lg-min) {
+              @media (min-height: $header-screen-lg-min) {
+                font-size: $welcome-h1-size-lg;
+                letter-spacing: $welcome-h1-spacing-lg;
+              }
+            }
+          }
+          
+          p {
+            color: $brand-secondary;
+            font-size: $welcome-p-size;
+            letter-spacing: $welcome-p-spacing;
+            margin-bottom: 12px;
+            margin-left: 20px;
+            margin-right: 20px;
+            
+            & > h1 {
+              margin-bottom: 60px;
+            }
+    
+            @media (min-width: $header-screen-sm-min) {
+              @media (min-height: $header-screen-sm-min) {
+                font-size: $welcome-p-size-sm;
+                letter-spacing: $welcome-p-spacing-sm;
+              }
+            }
+            @media (min-width: $header-screen-md-min) {
+              @media (min-height: $header-screen-md-min) {
+                font-size: $welcome-p-size-md;
+                letter-spacing: $welcome-p-spacing-md;
+              }
+            }
+            @media (min-width: $header-screen-lg-min) {
+              @media (min-height: $header-screen-lg-min) {
+                font-size: $welcome-p-size-lg;
+                letter-spacing: $welcome-p-spacing-lg;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.page-head .header-wrapper {
+    background-color: rgba(0,0,0,0.45);
+    background-size: cover;
+	position: relative;
+	padding: 65px 0px;
+  }
+
+  &#contact-page.page-head .header-wrapper {
+//    background: rgba(0,0,0,0.45) $header-contact-bg-image center center no-repeat;
+  }
+//  &#portfolio-page.page-head .header-wrapper {
+//    background: rgba(255,255,255,1) $header-portfolio-bg-image center center no-repeat;
+//    
+//    .breadcrumb {
+//        background-color: rgba(mix(white,$brand-info,90%),0.9);
+//    }
+//  }
+}
+
+
+

@@ -1,0 +1,14 @@
+//
+// Labels Overrides and Adjustments
+// --------------------------------------------------
+
+.label {
+  font-weight: $label-font-weight;
+}
+
+// Colors
+// Contextual variations (linked labels get darker on :hover)
+
+.label-secondary {
+  @include label-variant($label-secondary-bg);
+}

@@ -1,0 +1,12 @@
+//
+// Code (inline and block) Overrides and Adjustments
+// --------------------------------------------------
+
+
+// User input typically entered via keyboard
+kbd {
+  kbd {
+    // use semibold instead of bold for nested kbd tags
+    font-weight: $font-weight-semibold;
+  }
+}

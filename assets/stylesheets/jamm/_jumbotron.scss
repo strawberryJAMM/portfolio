@@ -1,0 +1,16 @@
+//
+// Jumbotron Overrides and Adjustments
+// --------------------------------------------------
+
+
+.jumbotron {
+  p {
+    font-weight: $jumbotron-font-weight;
+
+    // use semibold instead of bold
+    b,
+    strong {
+      font-weight: $jumbotron-font-weight-bold;
+    }
+  }
+}

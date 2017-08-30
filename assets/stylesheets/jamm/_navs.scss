@@ -1,0 +1,22 @@
+// Navs Overrides & Adjustments
+// --------------------------------------------------
+
+.nav-tabs {
+	margin-right:           2px;
+
+	>li {
+		>a {
+			border-radius:  0px;
+			margin:         0px;
+			padding:        10px 24px;
+		}
+	}
+}
+
+
+.tab-content {
+    border:                 1px solid #dadada;
+    border-top-color:       transparent;
+    margin-right:           3px;
+    padding:                20px;
+}

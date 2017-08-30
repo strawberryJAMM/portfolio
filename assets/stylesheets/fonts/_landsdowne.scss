@@ -1,0 +1,53 @@
+@at-root {
+  // ------------------------------
+  // **** Landsdowne [Serif, Display]
+  // Uses Regular weight for both normal and bold weight 
+  // Uses Regular style for both normal and italic style
+
+  
+  // Font Weight - Normal
+  // Font Style - Normal
+	@font-face {
+		font-family: 'Landsdowne';
+		src: url('#{$font-path}/landsdowne/landsdowne-webfont.woff2') format('woff2'),
+			 url('#{$font-path}/landsdowne/landsdowne-webfont.woff') format('woff'),
+			 url('#{$font-path}/landsdowne/landsdowne-webfont.ttf') format('truetype');
+		font-weight: normal;
+		font-style: normal;
+	}
+
+  // ** Since this is a single-face font, define the regular font for "bold" as well
+  // Font Weight - Bold
+  // Font Style - Normal
+	@font-face {
+		font-family: 'Landsdowne';
+		src: url('#{$font-path}/landsdowne/landsdowne-webfont.woff2') format('woff2'),
+			 url('#{$font-path}/landsdowne/landsdowne-webfont.woff') format('woff'),
+			 url('#{$font-path}/landsdowne/landsdowne-webfont.ttf') format('truetype');
+		font-weight: bold;
+		font-style: normal;
+	}
+
+  // Font Weight - Normal
+  // Font Style - Italic
+	@font-face {
+		font-family: 'Landsdowne';
+		src: url('#{$font-path}/landsdowne/landsdowne-webfont.woff2') format('woff2'),
+			 url('#{$font-path}/landsdowne/landsdowne-webfont.woff') format('woff'),
+			 url('#{$font-path}/landsdowne/landsdowne-webfont.ttf') format('truetype');
+		font-weight: normal;
+		font-style: italic;
+	}
+
+  // ** Since this is a single-face font, define the regular font for "bold" as well
+  // Font Weight - Bold
+  // Font Style - Italic
+	@font-face {
+		font-family: 'Landsdowne';
+		src: url('#{$font-path}/landsdowne/landsdowne-webfont.woff2') format('woff2'),
+			 url('#{$font-path}/landsdowne/landsdowne-webfont.woff') format('woff'),
+			 url('#{$font-path}/landsdowne/landsdowne-webfont.ttf') format('truetype');
+		font-weight: bold;
+		font-style: italic;
+	}
+}

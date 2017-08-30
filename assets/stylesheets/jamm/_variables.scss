@@ -1,0 +1,102 @@
+//
+// Variables for JAMM.COM
+// --------------------------------------------------
+
+//
+// Path Variables
+// --------------------------------------------------
+$font-path: "../fonts";		// path from compiled CSS to fonts folder.
+$image-path: "../images";	    // path from compiled CSS to images folder.
+
+
+// Media queries breakpoints for Header
+//-------------------------------------
+
+// Extra small screen / phone  (less than 480px wide or tall)
+// No media query since this is the default in Bootstrap
+
+// Small screen / tablet (485px and up)
+$header-screen-sm-min:      485px;
+
+// Medium screen / desktop (600px and up)
+$header-screen-md-min:      600px;
+
+// Large screen / wide desktop (768px and up)
+$header-screen-lg-min:      800px;
+
+// So media queries don't overlap when required, provide a maximum
+$header-screen-xs-max:              ($header-screen-sm-min - 1);
+$header-screen-sm-max:              ($header-screen-md-min - 1);
+$header-screen-md-max:              ($header-screen-lg-min - 1);
+
+
+// Background Image variables
+//-------------------------------------
+
+//$header-bg-height:        375; // Taller than sm. b/c Brand name wraps making nav-bar twice as tall
+//$header-bg-height-sm:     250; 
+$header-bg-height:        250;
+$header-bg-height-sm:     250; 
+$header-bg-height-md:     375; 
+$header-bg-height-lg:     500; 
+
+//$header-bg-image:                url(#{$image-path}/portfolio/jamm-banner-screen-xs.png);  // 1920x375px
+$header-bg-image:                url(#{$image-path}/portfolio/jamm-banner-screen-xs.png); // 1920x250px
+$header-bg-image-sm:             url(#{$image-path}/portfolio/jamm-banner-screen-sm.png); // 1920x250px
+$header-bg-image-md:             url(#{$image-path}/portfolio/jamm-banner-screen-md.png); // 1920x375px
+$header-bg-image-lg:             url(#{$image-path}/portfolio/jamm-banner-screen-lg.png); // 1920x500px
+
+$header-about-bg-image:         url(#{$image-path}/about-bg.jpg);
+$header-contact-bg-image:       url(#{$image-path}/contact-bg.png);
+$header-portfolio-bg-image:     url(#{$image-path}/portfolio-bg.png);
+
+// Header height variables
+//-------------------------------------
+$navbar-height:             70px !default;  // set the navbar height if it's not already defined
+//$navbar-height-xs:          140px !default; // navbar doubles at XS sizes
+
+$header-height:             calc(#{$header-bg-height}px + (#{$navbar-height} + 2px)); //calc(#{$header-bg-height}px - (#{$navbar-height-xs} + 2px));
+$header-height-sm:          calc(#{$header-bg-height-sm}px + (#{$navbar-height} + 2px)); //calc(#{$header-bg-height-sm}px - (#{$navbar-height} + 2px));
+$header-height-md:          calc(#{$header-bg-height-md}px + (#{$navbar-height} + 2px)); //calc(#{$header-bg-height-md}px - (#{$navbar-height} + 2px));
+$header-height-lg:          calc(#{$header-bg-height-lg}px + (#{$navbar-height} + 2px)); // calc(#{$header-bg-height-lg}px - (#{$navbar-height} + 2px));
+
+
+// Welcome message variables
+//-------------------------------------
+
+// Top Margin variables
+$welcome-top-margin:      40px;
+$welcome-top-margin-sm:   $welcome-top-margin;
+$welcome-top-margin-md:   60px;
+$welcome-top-margin-lg:   80px;
+
+// Max Width variables
+$welcome-max-width:      280px;
+$welcome-max-width-sm:   380px;
+$welcome-max-width-md:   520px;
+$welcome-max-width-lg:   680px;
+
+// H1 Font Size & Spacing
+$font-size-base:         14px !default;  // set the base font size if it's not already defined
+
+$welcome-h1-size:        ceil(($font-size-base * 1.25)); // ~18px
+$welcome-h1-size-sm:     ceil(($font-size-base * 1.7)); // ~24px
+$welcome-h1-size-md:     floor(($font-size-base * 2.15)); // ~30px
+$welcome-h1-size-lg:     floor(($font-size-base * 2.6)); // ~36px
+
+$welcome-h1-spacing:      1px;
+$welcome-h1-spacing-sm:   2px; 
+$welcome-h1-spacing-md:   3px; 
+$welcome-h1-spacing-lg:   4px; 
+
+// P Fonts Size & Spacing
+$welcome-p-size:        $font-size-base; // 14px // ceil(($font-size-base * 0.85)); // ~12px
+$welcome-p-size-sm:     $welcome-p-size;
+$welcome-p-size-md:     ceil(($font-size-base * 1.14)); // ~16px// $font-size-base; // 14px
+$welcome-p-size-lg:     $welcome-p-size-md;
+
+$welcome-p-spacing:       1px;
+$welcome-p-spacing-sm:    $welcome-p-spacing; 
+$welcome-p-spacing-md:    2px; 
+$welcome-p-spacing-lg:    $welcome-p-spacing-md; 
+

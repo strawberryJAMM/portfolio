@@ -1,0 +1,3 @@
+#robots.txt for http://www.jamm.com/
+User-agent: *
+Disallow: /obsolete/

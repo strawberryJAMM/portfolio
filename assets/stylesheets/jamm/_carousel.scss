@@ -1,0 +1,15 @@
+//
+// Carousel Overrides & Adjustments
+// --------------------------------------------------
+
+
+// Left/right controls for nav
+// ---------------------------
+
+.carousel-control {
+  // Toggles
+  .icon-prev,
+  .icon-next {
+    font-family: $font-family-serif;  // use theme serif not just plain "serif" font
+  }
+}

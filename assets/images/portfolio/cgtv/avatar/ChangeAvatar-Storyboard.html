@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+  <title>Dynamic Storyboard - Change User Avatar</title>
+  <script language="javascript">
+//script found on www.a1javascripts.com
+//all credit to unknown author
+
+	// error trapping code
+	window.onerror = null;
+
+	var netscape = 0;
+	var goodIE = 0;
+	browserName = navigator.appName.substring(0,8);
+	browserVer = parseFloat(navigator.appVersion);
+	if (browserName == "Netscape" && browserVer >= 3)	{ netscape = 1; }
+	if (browserName == "Microsof" && browserVer >= 4) { goodIE = 1; }
+	// end error trapping code
+
+
+	if (netscape || goodIE) {
+
+		pic0 = new Image(1057,817);
+		pic0.src = "Storyboard_00.png";
+		pic1 = new Image(1057,817);
+		pic1.src = "Storyboard_01.png";
+		pic2 = new Image(1057,817);
+		pic2.src = "Storyboard_02.png";
+		pic3 = new Image(1057,817);
+		pic3.src = "Storyboard_03.png";
+		pic4 = new Image(1057,817);
+		pic4.src = "Storyboard_04.png";
+		pic5 = new Image(1057,817);
+		pic5.src = "Storyboard_05.png";
+		pic6 = new Image(1057,817);
+		pic6.src = "Storyboard_06.png";
+		pic7 = new Image(1057,817);
+		pic7.src = "Storyboard_07.png";
+		pic8 = new Image(1057,817);
+		pic8.src = "Storyboard_08.png";
+	}
+
+	function ChangeImage(imgDocID, imgObjName) {
+	if (netscape || goodIE) {
+  	document.images[imgDocID].src = eval(imgObjName + ".src");
+	}
+}
+
+</script>
+</head>
+<body>
+<!-- ** file created on 12/18/2007 12:41:43 PM ** -->
+<h1>Dynamic Storyboard - Change User Avatar</h1>
+<h2><font color="#FF0000">To view the storyboard, click on the steps along the top of the image.</font></h2>
+<img src="Storyboard_00.png" alt="" name="pic" usemap="#map" style="border: 0px;">
+  <map name="map">
+		<area shape="poly"
+		  onClick="ChangeImage('pic','pic0'); return true;"
+		  coords="36,24,36,68,102,68,112,46,102,24,36,24"
+		  alt="Set Storyboard to Initial Conditions"
+ 		  onMouseOver="window.status=this.alt;return true;"
+		  onMouseOut="window.status='';return true;"
+		>
+		<area shape="poly"
+		  coords="105,24,115,46,105,68,155,68,165,46,155,24,105,24"
+		  alt="View List"
+		  onMouseOver="window.status=this.alt;return true;"
+		  onMouseOut="window.status='';return true;"
+			onClick="ChangeImage('pic','pic1'); return true;"
+		>
+		<area shape="poly"
+		  coords="159,24,169,46,159,68,222,68,232,46,222,24,159,24"
+		  alt="Select GAMES"
+		  onMouseOver="window.status=this.alt;return true;"
+		  onMouseOut="window.status='';return true;"
+			onClick="ChangeImage('pic','pic2'); return true;"
+		>
+		<area shape="poly"
+		  coords="226,24,236,46,226,68,287,68,297,46,287,24,226,24"
+		  alt="Show GAMES List"
+		  onMouseOver="window.status=this.alt;return true;"
+		  onMouseOut="window.status='';return true;"
+			onClick="ChangeImage('pic','pic3'); return true;"
+		>
+		<area shape="poly"
+		  coords="291,24,301,46,291,68,344,68,354,46,344,24,291,24"
+		  alt="View List"
+		  onMouseOver="window.status=this.alt;return true;"
+		  onMouseOut="window.status='';return true;"
+			onClick="ChangeImage('pic','pic4'); return true;"
+		>
+		<area shape="poly"
+		  coords="348,24,358,46,348,68,423,68,433,46,423,24,348,24"
+		  alt="Select EMOTIONS"
+		  onMouseOver="window.status=this.alt;return true;"
+		  onMouseOut="window.status='';return true;"
+			onClick="ChangeImage('pic','pic5'); return true;"
+		>
+		<area shape="poly"
+		  coords="427,24,437,46,427,68,504,68,514,46,504,24,427,24"
+		  alt="Show EMOTIONS List"
+		  onMouseOver="window.status=this.alt;return true;"
+		  onMouseOut="window.status='';return true;"
+		  onClick="ChangeImage('pic','pic6'); return true;"
+		>
+		<area shape="poly"
+		  coords="508,24,518,46,508,68,566,68,576,46,566,24,508,24"
+		  alt="Hover Over Avatar"
+		  onMouseOver="window.status=this.alt;return true;"
+		  onMouseOut="window.status='';return true;"
+			onClick="ChangeImage('pic','pic7'); return true;"
+		>
+		<area shape="poly"
+		  coords="570,24,580,46,570,68,633,68,643,46,633,24,570,24"
+		  alt="Choose Avatar"
+		  onMouseOver="window.status=this.alt;return true;"
+		  onMouseOut="window.status='';return true;"
+			onClick="ChangeImage('pic','pic8'); return true;"
+		>
+	</map>
+  </body>
+</html>

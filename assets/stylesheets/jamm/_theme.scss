@@ -1,0 +1,328 @@
+//
+// JAMM.COM Theme 
+// --------------------------------------------------
+
+// Page Sections
+// --------------------------------------------------
+
+// Define default style for sections 
+@include bg-variant('section', $section-bg);
+section {
+  // set specific text colour for this background option
+  color: $section-color;
+
+  // define margins and padding
+  margin: 1.7129em 0; // ~24px 0  (with base of 14px)
+  padding: 0;
+    
+   h1, h2, h3, h4, h5, h6,
+  .h1, .h2, .h3, .h4, .h5, .h6 {
+    color: $section-heading-color;
+  }
+
+  .title {
+    margin-bottom: 5px;
+    //text-transform: uppercase;
+    text-transform: capitalize;
+    font-variant: small-caps;
+  }
+  
+  .sub-title {
+    color: $brand-secondary;
+    margin-bottom: 0px;
+    text-transform: capitalize;
+    word-spacing: 1px;
+  }
+  
+}
+
+.headline {
+	margin-bottom: 50px;
+}
+
+
+// Global
+// --------------------------------------------------
+
+*:hover {
+	-webkit-transition: all 0.4s ease-in-out;
+	   -moz-transition: all 0.4s ease-in-out;
+	    -ms-transition: all 0.4s ease-in-out;
+	     -o-transition: all 0.4s ease-in-out;
+			transition: all 0.4s ease-in-out;
+}
+
+html {
+	font-size: 0.813em;
+}
+
+footer {
+    p {
+        text-indent: 40px;
+    }
+}
+
+// Breadcrumb
+.breadcrumb {
+	background-color: transparent;
+	font-size: 15px;
+	float: right;
+  	text-transform: uppercase;
+}
+
+.breadcrumb a {
+    color: $brand-info;
+}
+
+.breadcrumb a:hover {
+	color: #ffffff;
+}
+
+.breadcrumb>.active {
+    font-weight: $font-weight-semibold;
+    color: $brand-info;
+}
+
+.breadcrumb>li+li:before {
+	padding: 0 10px;
+//	color: #C7C4C0;
+    color: $brand-info;
+	content: ">";
+}
+
+
+// Intro
+// --------------------------------------------------
+
+.intro {
+	padding: 2.500em 0; // ~40px 0  (with base of 16px)
+}
+
+.intro .intro-description {
+	padding-left: 40px;
+}
+
+.intro .intro-description h2 {
+	font-size: 2em; // ~32px
+	margin-top: 16px;
+	//text-transform: uppercase;
+  text-transform: capitalize;
+  font-variant: small-caps;
+}
+
+.intro .intro-description p {
+	padding: 2px 30px 5px 0px;
+}
+
+@media (min-width: $screen-md-min) {
+	.intro .intro-description h2 {
+		margin-top: -10px;
+	}
+}
+
+@media (min-width: $screen-md-min) {
+	.intro .intro-description {
+		padding-left: 60px;
+	}
+}
+
+
+// Portfolio
+// --------------------------------------------------
+
+.portfolio-item {
+    margin-bottom: 25px;
+}
+
+
+// Testimonial
+// --------------------------------------------------
+
+#quotes {
+
+  .quote-box {
+	background-color: #fff;
+    box-shadow: 1px 3px 7px #eee;
+    margin-bottom: 2.714em;
+    padding: 40px;
+    min-height: 500px;
+    
+    @media (min-width: $screen-md-min) {
+      min-height: 450px;
+    }
+
+    .about-quote {
+      text-align: center;
+
+      p {
+        font-size: ($font-size-base * 0.75); // ~12px 
+        font-weight: $font-weight-semibold;
+        letter-spacing: 1px;
+        margin-top: 8px;
+
+        a {
+          text-transform: uppercase;
+        }
+        
+        small,
+        .small {
+            font-size: ($font-size-base * 0.6875); // ~11px
+            font-weight: $font-weight-light;
+            text-transform: capitalize;
+        }
+      }
+    }
+    
+    .main-quote {
+      p {
+          font-size: ($font-size-base * 0.875); // ~14px
+          margin-top: 5px;
+      }
+    }
+  }
+}
+
+
+@media (max-width: $screen-xs-max) {
+  #quotes {
+    .quote-box {
+      .main-quote {
+        p {
+            margin-top: -5px;
+        }
+      }
+    }
+  }
+}
+
+
+// Project Summary
+// --------------------------------------------------
+
+.proj-summary {
+	padding: 2.500em 0; // ~40px 0  (with base of 16px)
+}
+
+.proj-summary {
+  .proj-summary-description {
+    @extend .lead, .text-white;
+  }
+  
+  .proj-summary-tags, .proj-summary-description {
+  	padding-left: 40px;
+    
+    p {
+    	padding: 2px 30px 5px 0px;
+    }
+    
+    @media (min-width: $screen-md-min) {
+      padding-left: 60px;
+    }
+  }
+}
+
+
+// Project Details
+// --------------------------------------------------
+
+.proj-details {
+	padding: 2.500em 0; // ~40px 0  (with base of 16px)
+}
+
+.proj-details {
+  .proj-details-description {
+
+    padding-left: 40px;
+
+    @media (min-width: $screen-md-min) {
+      padding-left: 60px;
+    }
+    
+    h3 {
+      //font-size: 2em; // ~32px
+      margin-top: 16px;
+      //text-transform: uppercase;
+      //text-transform: capitalize;
+      //font-variant: small-caps;
+      
+      @media (min-width: $screen-md-min) {
+        margin-top: -5px;
+      }
+    }
+
+    p {
+    	padding: 2px 30px 5px 0px;
+    }
+  }
+}
+
+// Contact Page
+// --------------------------------------------------
+
+#contact-page section {
+	padding: 0px;
+}
+
+// Quick Contact
+.contact-address {
+	margin: 0px;
+}
+
+.contact-address .address-info {
+	border: 1px solid #f1f1f1;
+	margin: 20px 0px;
+	padding: 0px;
+    min-height: 180px;
+}
+
+.contact-address .address-info .address-info-icon {
+    background-color: #333333;
+    border-right: 1px solid #f1f1f1;
+}
+
+.contact-address .address-info:hover .address-info-icon {
+    background-color: #000;
+    border-right: 1px solid #000;
+}
+
+.contact-address .address-info:hover .address-info-icon i{
+    color: #fff;
+}
+
+.contact-address .address-info .address-info-icon i {
+    position: relative;
+    padding: 62px 0px;
+    font-size: 30px;
+    color: #dadada;
+}
+
+.contact-address .address-info .address-info-desc {
+    padding: 0px 0px 16px 20px;
+}
+
+.contact-address .address-info .address-info-desc p {
+    font-size: 13px;
+}
+
+// Contact Form
+.contact-form {
+	margin: 25px 0px 90px 0px;
+    padding-bottom: 80px;
+}
+
+.contact-form .headline .section-title, 
+.contact-form .headline .section-sub-title {
+	text-transform: none;
+}
+
+.contact-form .btn-black {
+	float: right;
+	margin-top: 20px;
+}
+
+
+
+
+
+
+

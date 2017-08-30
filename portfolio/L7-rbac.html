@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en"><!-- InstanceBegin template="/Templates/template_portfolio-item.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<!-- InstanceParam name="projName" type="text" value="L7 RBAC Refresh" -->
+<!-- InstanceParam name="hasSlides" type="boolean" value="true" -->
+<!-- InstanceParam name="hasRelated" type="boolean" value="false" -->
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>strawberryJAMM Designs: Portfolio - L7 RBAC Refresh</title>
+<!-- Stylesheets -->
+<link rel="stylesheet" href="../assets/stylesheets/bootstrap.jamm.css">
+<link rel="stylesheet" href="../assets/stylesheets/styles.css">
+<script src="../assets/javascripts/jquery-1.12.0.min.js" type="text/javascript"></script>
+<script src="../assets/javascripts/jssor.slider-21.1.6.mini.js" type="text/javascript"></script>
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+            <script src="../assets/javascripts/html5shiv.min.js"></script>
+            <script src="../assets/javascripts/respond.min.js"></script>
+          <![endif]-->
+
+<!-- #region Jssor Slider Begin -->
+<!-- Generator: Jssor Slider Maker -->
+<!-- This code works with jquery library. -->
+<script type="text/javascript">
+    jQuery(document).ready(function ($) {
+
+        var jssor_1_SlideshowTransitions = [
+          {$Duration:600,$Delay:100,$Cols:10,$Formation:$JssorSlideshowFormations$.$FormationStraight,$Opacity:2}
+        ];
+
+        var jssor_1_options = {
+          $FillMode: 5,
+          $Loop: 2,
+          $SlideshowOptions: {
+            $Class: $JssorSlideshowRunner$,
+            $Transitions: jssor_1_SlideshowTransitions,
+            $TransitionsOrder: 1
+          },
+          $ArrowNavigatorOptions: {
+            $Class: $JssorArrowNavigator$
+          },
+          $ThumbnailNavigatorOptions: {
+            $Class: $JssorThumbnailNavigator$,
+            $Cols: 8,
+            $SpacingX: 10,
+            $SpacingY: 3,
+            $Align: 402
+          }
+        };
+
+        var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+        /*responsive code begin*/
+        /*you can remove responsive code if you don't want the slider scales while window resizing*/
+        function ScaleSlider() {
+            var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
+            if (refSize) {
+                refSize = Math.min(refSize, 970);
+                jssor_1_slider.$ScaleWidth(refSize);
+            }
+            else {
+                window.setTimeout(ScaleSlider, 30);
+            }
+        }
+        ScaleSlider();
+        $(window).bind("load", ScaleSlider);
+        $(window).bind("resize", ScaleSlider);
+        $(window).bind("orientationchange", ScaleSlider);
+        /*responsive code end*/
+    });
+</script>
+<style>
+    /* jssor slider arrow navigator skin 20 css */
+    /*
+    .jssora20l                  (normal)
+    .jssora20r                  (normal)
+    .jssora20l:hover            (normal mouseover)
+    .jssora20r:hover            (normal mouseover)
+    .jssora20l.jssora20ldn      (mousedown)
+    .jssora20r.jssora20rdn      (mousedown)
+    .jssora20l.jssora20lds      (disabled)
+    .jssora20r.jssora20rds      (disabled)
+    */
+    .jssora20l, .jssora20r {
+        display: block;
+        position: absolute;
+        /* size of arrow element */
+        width: 55px;
+        height: 55px;
+        cursor: pointer;
+        background: url('/assets/images/image-gallery/a20.png') no-repeat;
+        overflow: hidden;
+    }
+    .jssora20l { background-position: -3px -33px; }
+    .jssora20r { background-position: -63px -33px; }
+    .jssora20l:hover { background-position: -123px -33px; }
+    .jssora20r:hover { background-position: -183px -33px; }
+    .jssora20l.jssora20ldn { background-position: -243px -33px; }
+    .jssora20r.jssora20rdn { background-position: -303px -33px; }
+    .jssora20l.jssora20lds { background-position: -3px -33px; opacity: .3; pointer-events: none; }
+    .jssora20r.jssora20rds { background-position: -63px -33px; opacity: .3; pointer-events: none; }
+    /* jssor slider thumbnail navigator skin 04 css */
+    /*
+    .jssort04-105-75 .p            (normal)
+    .jssort04-105-75 .p:hover      (normal mouseover)
+    .jssort04-105-75 .pav          (active)
+    .jssort04-105-75 .pav:hover    (active mouseover)
+    .jssort04-105-75 .pdn          (mousedown)
+    */
+    .jssort04-105-75 .p {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 105px;
+        height: 75px;
+    }
+    .jssort04-105-75 .t {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: none;
+    }
+    .jssort04-105-75 .w, .jssort04-105-75 .pav:hover .w {
+        position: absolute;
+        width: 103px;
+        height: 73px;
+        border: #0099FF 1px solid;
+        box-sizing: content-box;
+    }
+    .jssort04-105-75 .pdn .w, .jssort04-105-75 .pav .w { border-style: dashed; }
+    .jssort04-105-75 .c {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 105px;
+        height: 75px;
+        background-color: #000;
+        filter: alpha(opacity=45);
+        opacity: .45;
+        transition: opacity .6s;
+        -moz-transition: opacity .6s;
+        -webkit-transition: opacity .6s;
+        -o-transition: opacity .6s;
+    }
+    .jssort04-105-75 .p:hover .c, .jssort04-105-75 .pav .c { filter: alpha(opacity=0); opacity: 0; }
+    .jssort04-105-75 .p:hover .c { transition: none; -moz-transition: none; -webkit-transition: none; -o-transition: none; }
+    * html .jssort04-105-75 .w { width /**/: 105px; height /**/: 75px; }
+</style>
+<!-- #endregion Jssor Slider End -->
+</head>
+
+<body>
+<!-- site-navigation start -->
+<nav id="mainNavigation" class="navbar navbar-inverse main-navigation navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header"> 
+      
+      <!-- navbar logo -->
+      <div class="navbar-brand"> <a href="../index.html">strawberryJAMM Designs</a> </div>
+      <!-- navbar logo -->
+      
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+    </div>
+    <!-- /.navbar-header --> 
+    
+    <!-- nav links -->
+    <div class="collapse navbar-collapse" id="main-nav-collapse">
+      <ul class="nav navbar-nav navbar-right text-uppercase">
+        <li> <a href="../index.html"><span>home</span></a> </li>
+        <li> <a href="../about.html"><span>about</span></a> </li>
+        <li> <a href="../contact.html"><span>contact</span></a> </li>
+      </ul>
+    </div>
+    <!-- nav links --> 
+    
+  </div>
+  <!-- /.container --> 
+</nav>
+<!-- site-navigation end --> 
+
+<!-- header start -->
+<header id="project-page" class="header-fixed header-wrapper container">
+  <div class="header-overlay"></div>
+  <div class="header-wrapper-inner">
+    <div class="container">
+      <div class="welcome-speech">
+        <p>Project Name</p>
+        <h1>L7 RBAC Refresh</h1>
+      </div>
+      <!-- /.welcome speech --> 
+    </div>
+    <!-- /.container --> 
+  </div>
+  <!-- /.header-wrapper-inner --> 
+</header>
+<!-- /#header -->
+
+<!-- Page Content -->
+<div class="main-content">
+
+  <section id="proj-summary" class="proj-summary">
+    <div class="container"> 
+      <div class="proj-summary-tags">
+        <!-- Portfolio Item Tags -->
+        <p><!-- InstanceBeginRepeat name="Tags" --><!-- InstanceBeginRepeatEntry --><span class="label label-secondary">
+          <!-- InstanceBeginEditable name="Tag" -->Interaction Design<!-- InstanceEndEditable -->
+          </span>&nbsp;&nbsp;<!-- InstanceEndRepeatEntry --><!-- InstanceBeginRepeatEntry --><span class="label label-secondary">
+          <!-- InstanceBeginEditable name="Tag" -->Wireframes<!-- InstanceEndEditable -->
+          </span>&nbsp;&nbsp;<!-- InstanceEndRepeatEntry --><!-- InstanceEndRepeat --></p>
+      </div>
+      <!-- /.proj-summary-tags -->
+
+      <div class="proj-summary-description">
+        <!-- Project Description/Summary -->
+        <!-- InstanceBeginEditable name="Description" -->
+           <!-- #BeginLibraryItem "/Library/Summary - L7 RBAC.lbi" -->
+           <p>Interaction Design for a UI refresh of the existing Role Based Access Control (RBAC) feature of Layer 7 Technologies' API Manager software.</p>
+        <!-- #EndLibraryItem --> <!-- InstanceEndEditable -->
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.container -->
+  </section>
+  <!-- /#proj-summary --> 
+  
+  <!-- Project Details -->
+  <section id="proj-details" class="proj-details">
+    <div class="container"> 
+      <h3>Project Details<br>
+      <small><span class="text-uppercase text-tertiary"><!-- InstanceBeginEditable name="Date" --><!-- #BeginLibraryItem "/Library/Date - L7 RBAC.lbi" -->
+Jan 2013&ndash;Nov 2013<!-- #EndLibraryItem --><!-- InstanceEndEditable --></span></small></h3>
+      <!-- InstanceBeginEditable name="Details" -->
+      <!-- #BeginLibraryItem "/Library/Description - L7 RBAC.lbi" -->
+      <p><em>TBD</em></p>
+      <!-- #EndLibraryItem --> <!-- InstanceEndEditable -->
+    </div>
+    <!-- /.container -->
+  </section>
+  <!-- /#proj-details --> 
+  
+  
+  <!-- Project Images -->
+  <section id="proj-images" class="proj-images">
+    <div class="container"> 
+      <h3>Project Images</h3>
+      <p><em>Hover over image for descriptive caption. Click to open full size in a separate tab.</em></p>
+      <!-- Generator: Jssor Slider Maker -->
+      <div id="jssor_1" style="position: relative; margin: 0 auto; top: 0px; left: -15px; width: 970px; height: 700px; overflow: hidden; visibility: hidden; background-color: #222222;">
+          <!-- Loading Screen -->
+          <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
+              <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+              <div style="position:absolute;display:block;background:url('../assets/images/image-gallery/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
+          </div>
+          <div data-u="slides" style="cursor: default; position: relative; top: 100px; left: 0px; width: 966px; height: 596px; overflow: hidden; border: 2px solid #222222">
+          <!-- InstanceBeginRepeat name="Slides" --><!-- InstanceBeginRepeatEntry -->
+              <!-- InstanceParam name="slideurl" type="text" value="../assets/images/image-gallery/l7-ca-rbac-refresh/rbac_role-management_sample01.png" -->
+              <!-- InstanceParam name="slidecaption" type="text" value="Role Management" -->
+              <div data-p="195.25" >
+                  <a href="../assets/images/image-gallery/l7-ca-rbac-refresh/rbac_role-management_sample01.png" target="full-view"><img data-u="image" src="../assets/images/image-gallery/l7-ca-rbac-refresh/rbac_role-management_sample01.png" alt="Role Management" title="Role Management" /></a>
+                  <img data-u="thumb" src="../assets/images/image-gallery/l7-ca-rbac-refresh/rbac_role-management_sample01.png" alt="Thumbnail for &quot;Role Management&quot;" title="View &quot;Role Management&quot;" />
+                  <!-- InstanceBeginEditable name="clear" -->  <!-- InstanceEndEditable -->
+              </div> 
+        <!-- InstanceEndRepeatEntry --><!-- InstanceBeginRepeatEntry -->
+              <!-- InstanceParam name="slideurl" type="text" value="../assets/images/image-gallery/l7-ca-rbac-refresh/rbac-users-groups_sample01.png" -->
+              <!-- InstanceParam name="slidecaption" type="text" value="Users &amp;amp Groups - User Properties" -->
+              <div data-p="195.25" >
+                  <a href="../assets/images/image-gallery/l7-ca-rbac-refresh/rbac-users-groups_sample01.png" target="full-view"><img data-u="image" src="../assets/images/image-gallery/l7-ca-rbac-refresh/rbac-users-groups_sample01.png" alt="Users &amp Groups - User Properties" title="Users &amp Groups - User Properties" /></a>
+                  <img data-u="thumb" src="../assets/images/image-gallery/l7-ca-rbac-refresh/rbac-users-groups_sample01.png" alt="Thumbnail for &quot;Users &amp Groups - User Properties&quot;" title="View &quot;Users &amp Groups - User Properties&quot;" />
+                  <!-- InstanceBeginEditable name="clear" -->  <!-- InstanceEndEditable -->
+              </div> 
+        <!-- InstanceEndRepeatEntry --><!-- InstanceBeginRepeatEntry -->
+              <!-- InstanceParam name="slideurl" type="text" value="../assets/images/image-gallery/l7-ca-rbac-refresh/rbac-users-groups_sample02.png" -->
+              <!-- InstanceParam name="slidecaption" type="text" value="Users &amp;amp; Groups - Group Properties" -->
+              <div data-p="195.25" >
+                  <a href="../assets/images/image-gallery/l7-ca-rbac-refresh/rbac-users-groups_sample02.png" target="full-view"><img data-u="image" src="../assets/images/image-gallery/l7-ca-rbac-refresh/rbac-users-groups_sample02.png" alt="Users &amp; Groups - Group Properties" title="Users &amp; Groups - Group Properties" /></a>
+                  <img data-u="thumb" src="../assets/images/image-gallery/l7-ca-rbac-refresh/rbac-users-groups_sample02.png" alt="Thumbnail for &quot;Users &amp; Groups - Group Properties&quot;" title="View &quot;Users &amp; Groups - Group Properties&quot;" />
+                  <!-- InstanceBeginEditable name="clear" -->  <!-- InstanceEndEditable -->
+              </div> 
+        <!-- InstanceEndRepeatEntry --><!-- InstanceBeginRepeatEntry -->
+              <!-- InstanceParam name="slideurl" type="text" value="../assets/images/image-gallery/l7-ca-rbac-refresh/rbac-users-groups_sample03.png" -->
+              <!-- InstanceParam name="slidecaption" type="text" value="Users &amp;amp; Groups - My Account Properties" -->
+              <div data-p="195.25" >
+                  <a href="../assets/images/image-gallery/l7-ca-rbac-refresh/rbac-users-groups_sample03.png" target="full-view"><img data-u="image" src="../assets/images/image-gallery/l7-ca-rbac-refresh/rbac-users-groups_sample03.png" alt="Users &amp; Groups - My Account Properties" title="Users &amp; Groups - My Account Properties" /></a>
+                  <img data-u="thumb" src="../assets/images/image-gallery/l7-ca-rbac-refresh/rbac-users-groups_sample03.png" alt="Thumbnail for &quot;Users &amp; Groups - My Account Properties&quot;" title="View &quot;Users &amp; Groups - My Account Properties&quot;" />
+                  <!-- InstanceBeginEditable name="clear" -->  <!-- InstanceEndEditable -->
+              </div> 
+        <!-- InstanceEndRepeatEntry --><!-- InstanceEndRepeat -->  
+          </div>
+          <!-- Thumbnail Navigator -->
+          <div data-u="thumbnavigator" class="jssort04-105-75" style="position:absolute;left:0px;top:0px;width: 966px;height:100px;" data-autocenter="1">
+              <!-- Thumbnail Item Skin Begin -->
+              <div data-u="slides" style="cursor: default;">
+                  <div data-u="prototype" class="p">
+                      <div class="w">
+                          <div data-u="thumbnailtemplate" class="t"></div>
+                      </div>
+                      <div class="c"></div>
+                  </div>
+              </div>
+              <!-- Thumbnail Item Skin End -->
+          </div>
+          <!-- Arrow Navigator -->
+          <span data-u="arrowleft" class="jssora06l" style="top:0px;left:8px;width:45px;height:45px;" data-autocenter="2"></span>
+          <span data-u="arrowright" class="jssora06r" style="top:0px;right:8px;width:45px;height:45px;" data-autocenter="2"></span>
+      </div>
+      <!-- #endregion Jssor Slider End -->
+    </div>
+    <!-- /.container -->
+  </section>
+  <!-- /#proj-images --> 
+     
+
+  
+</div>
+<!-- main-content end -->
+
+<footer>
+  <hr class="clearfix">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <p>Copyright &copy; strawberryJAMM Designs 2016</p>
+      </div>
+    </div>
+    <!-- /.row --> 
+  </div>
+  <!-- /.container --> 
+</footer>
+<!-- Footer -->
+</body>
+<!-- InstanceEnd --></html>

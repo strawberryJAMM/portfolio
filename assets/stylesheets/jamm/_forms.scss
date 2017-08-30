@@ -1,0 +1,31 @@
+//
+// Forms Overrides and Adjustments
+// --------------------------------------------------
+
+
+// Normalize non-controls
+//
+// Restyle and baseline non-control form elements.
+
+label {
+  font-weight: $label-font-weight;
+}
+
+
+
+// Checkboxes and radios
+//
+// Indent the labels to position radios/checkboxes as hanging controls.
+
+.radio,
+.checkbox {
+  label {
+  font-weight: $label-checkbox-font-weight;
+  }
+}
+
+// Radios and checkboxes on same line
+.radio-inline,
+.checkbox-inline {
+  font-weight: $label-checkbox-font-weight;
+}

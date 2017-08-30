@@ -1,0 +1,62 @@
+// Navbar Overrides & Adjustments
+// --------------------------------------------------
+
+.navbar {
+	&.main-navigation {
+		margin-bottom: 0px;
+	}
+}
+
+.navbar-brand {
+  font-family:    $navbar-brand-font-family;
+  font-size:      $navbar-brand-font-size;
+  font-weight: 	  $navbar-brand-font-weight;
+  line-height:    $navbar-brand-line-height;
+	
+  @media (max-width: $navbar-brand-font-size-breakpoint-small) {
+    font-size:    $navbar-brand-font-size-small;
+  }
+  @media (max-width: $navbar-brand-font-size-breakpoint-smallest) {
+    font-size:    $navbar-brand-font-size-smallest;
+  }
+
+  @media (max-width: $navbar-brand-line-height-breakpoint) {
+    line-height:  $navbar-brand-line-height-wrap-text;
+  }
+  
+	a {
+		&:hover,
+		&:focus {
+			text-decoration: 	none;
+		}
+	}
+  
+}
+
+.navbar-default {
+	.navbar-brand {
+		a {
+			color: 			    $navbar-default-brand-color;
+			
+			&:hover,
+			&:focus {
+			  color: 			$navbar-default-brand-hover-color;
+			  background-color: $navbar-default-brand-hover-bg;
+			}
+		}
+	}
+}
+
+.navbar-inverse {
+	.navbar-brand {
+		a {
+			color: 			    $navbar-inverse-brand-color;
+			
+			&:hover,
+			&:focus {
+			  color: 			$navbar-inverse-brand-hover-color;
+			  background-color: $navbar-inverse-brand-hover-bg;
+			}
+		}
+	}
+}
